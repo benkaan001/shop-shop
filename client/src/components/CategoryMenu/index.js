@@ -6,14 +6,21 @@ import {
   UPDATE_CURRENT_CATEGORY,
 } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
+<<<<<<< HEAD
 import { idbPromise } from '../../utils/helpers';
+=======
+>>>>>>> 62afce8940ba504d3bcab2c4d05c1db18441e082
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
 
   const { categories } = state;
 
+<<<<<<< HEAD
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
+=======
+  const { data: categoryData } = useQuery(QUERY_CATEGORIES);
+>>>>>>> 62afce8940ba504d3bcab2c4d05c1db18441e082
 
   useEffect(() => {
     if (categoryData) {
